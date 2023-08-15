@@ -63,7 +63,7 @@ foreach ($User in $AllUsers) {
             "DisplayName" = $user.DisplayName
             "Mail" = $User.Mail
             "Country" = $user.Country
-            "OU" = $UserDN.Substring($UserDN.IndexOf(",OU=UnilabsGroup,DC=uni,DC=ad") - 2, 2)
+            "OU" = $UserDN.Substring($UserDN.IndexOf(",OU=MyOU,DC=corp,DC=com") - 2, 2)
             "DaysOld" = $DaysCreatedSince.Days
             "onPremisesDistinguishedName" = $UserDN
             "DirSyncEnabled" = $user.DirSyncEnabled
